@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>About me</title>
+        <script src="js/mainjs.js"></script>
+    </head>
+    <body >
+        <button type="button" onclick="load_CD_detail('dataset/cd_catalog.xml', document.getElementById('bodyresults'))">
+        Get my CD collection
+      </button>
+      <table id="tblresults" border="1px">
+        <thead>
+            <tr>
+                <th>
+                    Artist
+                </th>
+                <th>
+                    Title
+                </th>
+            </tr>
+        </thead>
+        <tbody id="bodyresults">
+        </tbody>
+      </table>
+    </body>
+</html>
