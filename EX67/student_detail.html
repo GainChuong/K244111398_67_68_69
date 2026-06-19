@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>About me</title>
+        <script src="js/mainjs.js"></script>
+    </head>
+    <body >
+      <table id="tblresults" border="1px">
+        <thead>
+            <tr>
+                <th colspan="2" style="background-color: aqua;">
+                    Student Information
+                </th>
+            </tr>
+        </thead>
+        <tbody id="bodyresults">
+        </tbody>
+      </table>
+      <script>
+        var dataset_path="dataset/students.xml"
+        var bodyresults=document.getElementById("bodyresults")
+        var urlParams = new URLSearchParams(window.location.search);
+        var studentId = urlParams.get('id');
+        load_student_detail(dataset_path, bodyresults, studentId)
+      </script>
+    </body>
+</html>
